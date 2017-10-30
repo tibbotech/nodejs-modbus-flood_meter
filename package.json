@@ -1,0 +1,17 @@
+{
+  "name": "modbus-rtu-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tibbo Technology",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "modbus-serial": "^5.1.2",
+    "serialport": "^4.0.7",
+    "socket.io": "^2.0.4"
+  }
+}

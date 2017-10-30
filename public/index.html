@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Modbus Meter Sample</title>
+        <script type="text/javascript" src="js/socket.io.min.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/client.js"></script>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body ng-app="modbusSample">
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="110px" height="110px" xml:space="preserve"
+            ng-controller="indicatorController"
+            ng-hide="locked">
+
+            <g transform="translate(5,5)" class="led-icon">
+                <rect width="100" height="100" class="frame"></rect>
+                <rect x="10" y="10" width="80" height="80"
+                    class="indicator"
+                    ng-class="(state ? 'on' : 'off')">
+                </rect>
+            </g>
+        </svg>
+    </body>
+</html>
